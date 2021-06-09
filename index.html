@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/beerslider/dist/BeerSlider.css">
+
+    <style>
+        #slider{
+            height: 60%;
+            width: 60%;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="slider" class="beer-slider" data-beer-label="before">
+        <img src="./images/or1.jpg" alt="">
+        <div class="beer-reveal" data-beer-label="after">
+            <img src="./images/art1.jpg" alt="">
+        </div>
+    </div>
+
+
+    <script src="https://unpkg.com/beerslider/dist/BeerSlider.js"></script>
+    <script>
+        new BeerSlider(document.getElementById("slider"));
+    </script>
+    
+</body>
+</html>
